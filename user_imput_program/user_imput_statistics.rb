@@ -9,11 +9,11 @@ while continue == "Y"
     numbers[var] = element.to_i 
     sum = sum + element.to_i
     print "Continue Y/N : "
-    continue = gets.chomp
+    continue = gets .chomp
     if continue == "N"
-        puts "Total numbers : " + numbers.length.to_s
-        puts "Sum : " + sum.to_s
-        puts "Average :" + (sum / numbers.length).to_s
+        puts "Total numbers : " + numbers.count.to_s
+        puts "Sum : " + numbers.sum.to_s
+        puts "Average :" + (sum / numbers.count).to_s
         break
     else
         var = var + 1
